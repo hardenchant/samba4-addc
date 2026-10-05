@@ -9,7 +9,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN <<EOF
 apt-get update
 apt-get upgrade -y
-apt-get install -y --no-install-recommends -t trixie-backports -y samba-ad-dc samba samba-common-bin smbclient krb5-config krb5-user ldb-tools
+apt-get install -y --no-install-recommends -t trixie-backports -y samba-ad-dc samba samba-common-bin smbclient krb5-config krb5-user ldb-tools samba-ad-provision
 apt-get install -y --no-install-recommends htop tree iputils-ping curl jq net-tools nmap
 apt-get clean
 rm -rf /var/lib/apt/lists/*
